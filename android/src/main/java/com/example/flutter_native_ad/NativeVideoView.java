@@ -29,16 +29,10 @@ public class NativeVideoView implements PlatformView {
 
     @NonNull private View templateView;
     private static final String TAG = "-->Native";
-    private TemplateView template;
+    private FullscreenTemplateView template;
 
 
     NativeVideoView(@NonNull Context context, int id, @Nullable Map<String, Object> creationParams, String videoid) {
-//        template = new TemplateView(context);
-//        templateView
-//        textView = new TextView(context);
-//        textView.setTextSize(72);
-//        textView.setBackgroundColor(Color.rgb(255, 255, 255));
-//        textView.setText("Rendered on a native Android view (id: " + id + ")");
 
         templateView = LayoutInflater.from(context).inflate(R.layout.activity_main, null);
         template = templateView.findViewById(R.id.my_template);
@@ -66,6 +60,7 @@ public class NativeVideoView implements PlatformView {
 
         NativeAdOptions adOptions = new NativeAdOptions.Builder()
                 .setVideoOptions(videoOptions)
+//                .setMediaAspectRatio(NativeAdOptions.NATIVE_MEDIA_ASPECT_RATIO_PORTRAIT)
                 .build();
 
 

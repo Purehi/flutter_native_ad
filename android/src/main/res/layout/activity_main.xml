@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.example.flutter_native_ad.TemplateView
+    <com.example.flutter_native_ad.FullscreenTemplateView
         android:id="@+id/my_template"
         android:layout_width="match_parent"
         android:visibility="visible"
-        android:layout_height="wrap_content"
-        app:gnt_template_type="@layout/gnt_medium_template_view" />
+        android:layout_height="match_parent"
+        app:gnt_template_type="@layout/fullscreen_template_view" />
 </LinearLayout>

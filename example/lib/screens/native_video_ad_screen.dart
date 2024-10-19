@@ -19,13 +19,7 @@ class _NativeVideoAdScreenState extends State<NativeVideoAdScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("VideoNativeAd")),
-      body: Center(
-        child: Column(
-          children: [
-            Container(height: 255, child: _ad.addVideoNativeAD(context))
-          ],
-        ),
-      ),
+      body: _ad.addVideoNativeAD(context),
     );
   }
 }

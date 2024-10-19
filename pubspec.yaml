@@ -1,24 +1,24 @@
 name: flutter_native_ad
 description: Flutter Native Ads Plugin is Allow Show All Types of Ads in One Package.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/Khuntarpit/flutter_native_ad
 repository: https://github.com/Khuntarpit/flutter_native_ad
 
 environment:
-  sdk: ">=2.17.1 <4.0.0"
-  flutter: ">=2.5.0"
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   plugin_platform_interface: ^2.1.8
-  google_mobile_ads: ^5.1.0
+  google_mobile_ads: ^5.2.0
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
